@@ -5,10 +5,10 @@ public class Main_10 {
         Scanner sc = new Scanner(System.in);
 //Задаем размер матрицы
         System.out.println("Введите длину строки");
-        int j = sc.nextInt()-1;
+        int j = sc.nextInt();
         System.out.println("Введите колличество строк");
-        int i = sc.nextInt()-1;
-        int matrix[][] = new int[i+1][j+1];
+        int i = sc.nextInt();
+        int matrix[][] = new int[i][j];
         matrix[i][j] = 5;
 
 //Наполняем матрицу

@@ -1,14 +1,13 @@
 import java.util.Scanner;
 
-public class Main_9 {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-//        1. Пользователь вводит размер массива...
         int l = sc.nextInt();
         int sum = 0;
         double arr[] = new double[l];
         double multiArr[] = new double[l];
-//        ...и данные с клавиатуры в массив типа double.
+//        1. Пользователь вводит размер массива и данные с клавиатуры в массив типа double.
         for (int i = 0; i < l; i++) {
             arr[i] = sc.nextDouble();
         }
@@ -17,7 +16,7 @@ public class Main_9 {
             sum += arr[j];
             j++;
         }
-        sum = sum / l;
+            sum = sum / l;
 //        3. После этого произведите вывод массива на экран, где каждый элемент массива умножается на среднее арифметическое
         for (int k = 0; k < l; k++) {
             multiArr[k] = arr[k] * sum;
